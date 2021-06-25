@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Old Persian Keyboard Online - صفحه کلید فارسی باستان - صفحه کلید خط میخی</title>
+<meta name="Description" content="Online Old Persian keyboard">
+<meta name="Keywords" content="old, persian, Old Persian keyboard, Mikhi, صفحه کلید میخی, تایپ اسم با خط میخی">
+
+<link href="style.css" rel="stylesheet" type="text/css">
+<script src="base.js"></script>
+<script src="carper.js"></script>
+<script src="clipboard.js"></script>
+<script src="save.js"></script>
+</head>
+
+<body onLoad="conversion.saisie.focus()">
+<div class="center"> 
+
+<div class="break-large">Old Persian Keyboard Online<br>صفحه کلید خط میخی<br>By Vidana</div>
+
+<noscript>
+<span class="span-red">Warning! JavaScript is disabled, the functionality of Lexilogos is unavailable.</span><br>
+You must enable JavaScript in your web browser: see the <a class="ext" href="https://www.enable-javascript.com/" target="_blank">instructions</a>.<br><br>
+</noscript>
+<form name="conversion">
+<textarea name="saisie" id="bar" onKeyUp="transcrire()" rows="2" class="cadr"></textarea>
+<br>
+<br>
+<input type="button" class="myButton" data-clipboard-action="copy" data-clipboard-target="#bar" value="copy">
+<script>
+var clipboard = new Clipboard('.bf');
+clipboard.on('success', function(e) {
+console.log(e); 
+});
+clipboard.on('error', function(e) {
+console.log(e);
+});
+</script>
+<input type="button" class="myButton" onClick="save()" value="save">
+<input type="button" class="myButton" title="clear" onClick="reset();conversion.saisie.focus()" value="Clear">
+<!-- <input type="button" class="myButton" onClick="alpha(' ')" value="space"> ->>
+<!-- <input type="button" class="myButton" onClick="conversion.saisie.rows=4;conversion.saisie.focus()" value="small frame"> -->
+<!-- <input type="button" class="myButton" onClick="conversion.saisie.rows=40;conversion.saisie.focus()" value="large frame"> -->
+
+<div class="break-large">&nbsp;</div>
+
+<div>a/â<br>اَ / آ<br><input type="button" class="bt" title="A" onclick="alpha('&#66464;')" value="&#66464;"></div>
+<div>i/î<br>ای<br><input type="button" class="bt" title="I" onclick="alpha('&#66465;')" value="&#66465;"></div>
+<div>û<br>او<br><input type="button" class="bt" title="U" onclick="alpha('&#66466;')" value="&#66466;"></div>
+<div>Ka<br>کَ<br><input type="button" class="bt" title="KA" onclick="alpha('&#66467;')" value="&#66467;"></div>
+<div>Ku<br>کُ / کو<br><input type="button" class="bt" title="KU" onclick="alpha('&#66468;')" value="&#66468;"></div>
+<div>Ga<br>گَ<br><input type="button" class="bt" title="GA" onclick="alpha('&#66469;')" value="&#66469;"></div>
+<div>Gu<br>گو<br><input type="button" class="bt" title="GU" onclick="alpha('&#66470;')" value="&#66470;"></div>
+<div>Xa<br>خَ<br><input type="button" class="bt" title="XA" onclick="alpha('&#66471;')" value="&#66471;"></div>
+<div>Ča<br>چَ<br><input type="button" class="bt" title="CA" onclick="alpha('&#66472;')" value="&#66472;"></div>
+<div>Ja<br>جَ<br><input type="button" class="bt" title="JA" onclick="alpha('&#66473;')" value="&#66473;"></div>
+<div>Ji<br>جی<br><input type="button" class="bt" title="JI" onclick="alpha('&#66474;')" value="&#66474;"></div>
+<div>Ta<br>تَ<br><input type="button" class="bt" title="TA" onclick="alpha('&#66475;')" value="&#66475;"></div>
+<div>Tu<br>تو<br><input type="button" class="bt" title="TU" onclick="alpha('&#66476;')" value="&#66476;"></div>
+<div>Da<br>دَ<br><input type="button" class="bt" title="DA" onclick="alpha('&#66477;')" value="&#66477;"></div>
+<div>Di<br>دی<br><input type="button" class="bt" title="DI" onclick="alpha('&#66478;')" value="&#66478;"></div>
+<div>Du<br>دو<br><input type="button" class="bt" title="DU" onclick="alpha('&#66479;')" value="&#66479;"></div>
+<div>th / θa<br>ثَ<br><input type="button" class="bt" title="THA" onclick="alpha('&#66480;')" value="&#66480;"></div>
+<div>Pa<br>پَ<br><input type="button" class="bt" title="PA" onclick="alpha('&#66481;')" value="&#66481;"></div>
+<div>Ba<br>بَ<br><input type="button" class="bt" title="BA" onclick="alpha('&#66482;')" value="&#66482;"></div>
+<div>Fa<br>فَ<br><input type="button" class="bt" title="FA" onclick="alpha('&#66483;')" value="&#66483;"></div>
+<div>Na<br>نَ<br><input type="button" class="bt" title="NA" onclick="alpha('&#66484;')" value="&#66484;"></div>
+<div>Nu<br>نو<br><input type="button" class="bt" title="NU" onclick="alpha('&#66485;')" value="&#66485;"></div>
+<div>Ma<br>مَ<br><input type="button" class="bt" title="MA" onclick="alpha('&#66486;')" value="&#66486;"></div>
+<div>Mi<br>می<br><input type="button" class="bt" title="MI" onclick="alpha('&#66487;')" value="&#66487;"></div>
+<div>Mu<br>مو<br><input type="button" class="bt" title="MU" onclick="alpha('&#66488;')" value="&#66488;"></div>
+<div>Ya<br>یَ<br><input type="button" class="bt" title="YA" onclick="alpha('&#66489;')" value="&#66489;"></div>
+<div>Va<br>وَ<br><input type="button" class="bt" title="VA" onclick="alpha('&#66490;')" value="&#66490;"></div>
+<div>Vi<br>وی<br><input type="button" class="bt" title="VI" onclick="alpha('&#66491;')" value="&#66491;"></div>
+<div>Ra<br>رَ<br><input type="button" class="bt" title="RA" onclick="alpha('&#66492;')" value="&#66492;"></div>
+<div>Ru<br>رو<br><input type="button" class="bt" title="RU" onclick="alpha('&#66493;')" value="&#66493;"></div>
+<div>La<br>لَ<br><input type="button" class="bt" title="LA" onclick="alpha('&#66494;')" value="&#66494;"></div>
+<div>Sa<br>سَ<br><input type="button" class="bt" title="SA" onclick="alpha('&#66495;')" value="&#66495;"></div>
+<div>Za<br>زَ<br><input type="button" class="bt" title="ZA" onclick="alpha('&#66496;')" value="&#66496;"></div>
+<div>sha / Ša<br>شَ<br><input type="button" class="bt" title="SHA" onclick="alpha('&#66497;')" value="&#66497;"></div>
+<div>ss / ça<br>سِ / سَ<br><input type="button" class="bt" title="SSA" onclick="alpha('&#66498;')" value="&#66498;"></div>
+<div>Ha<br>هـَ<br><input type="button" class="bt" title="HA" onclick="alpha('&#66499;')" value="&#66499;"></div>
+&nbsp;<div>Splitter<br>جداکننده<br><input type="button" class="bt" title="word divider" onclick="alpha('&#66512;')" value="&#66512;"></div>
+
+<div class="break">&nbsp;</div>
+
+<div>1<br><input type="button" class="bt" title="1" onclick="alpha('&#66513;')" value="&#66513;"></div>
+<div>2<br><input type="button" class="bt" title="2" onclick="alpha('&#66514;')" value="&#66514;"></div>
+<div>10<br><input type="button" class="bt" title="10" onclick="alpha('&#66515;')" value="&#66515;"></div>
+<div>20<br><input type="button" class="bt" title="20" onclick="alpha('&#66516;')" value="&#66516;"></div>
+<div>100<br><input type="button" class="bt" title="100" onclick="alpha('&#66517;')" value="&#66517;"></div>
+
+<div class="break">&nbsp;</div>
+
+<div>Auramazdâ<br>اهورامزدا<br><input type="button" class="bt" title="AURAMAZDÂ" onClick="alpha('&#66504;')" value="&#66504;"></div>
+<div>Auramazdâ<br>اهورامزدا<br><input type="button" class="bt" title="AURAMAZDÂ" onclick="alpha('&#66505;')" value="&#66505;"></div>
+<div>AuramazdâHa<br>متعلق به اهورامزدا<br><input type="button" class="bt" title="AURAMAZDÂHA (genitive)" onclick="alpha('&#66506;')" value="&#66506;"></div>
+<div>Xšâyathiya<br>پادشاه<br><input type="button" class="bt" title="XSHÂYATHIYA" onclick="alpha('&#66507;')" value="&#66507;"></div>
+<div>Dahyāuš<br>سرزمین<br><input type="button" class="bt" title="DAHYÂUSH" onclick="alpha('&#66508;')" value="&#66508;"></div>
+<div>Dahyāuš<br>سرزمین<br><input type="button" class="bt" title="DAHYÂUSH" onclick="alpha('&#66509;')" value="&#66509;"></div>
+<div>Baga<br>خدا<br><input type="button" class="bt" title="BAGA" onclick="alpha('&#66510;')" value="&#66510;"></div>
+<div>Būmiš<br>زمین<br><input type="button" class="bt" title="BÛMISH" onclick="alpha('&#66511;')" value="&#66511;"></div>
+
+</form>
+
+<p>Download &amp; install the font <a href="SegoeUIHistoric.ttf">Segoe UI Historic</a></p>
+<p class="center"><a target="_blank" href="https://youtube.com/VidanaTv">youtube.com/VidanaTv</a><br>
+<a target="_blank" href= "https://instagram.com/VidanaTv">instagram.com/VidanaTv</a>
+</p>
+
+</div>
+
+</body>
+</html>
