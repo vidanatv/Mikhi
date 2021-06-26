@@ -4,7 +4,7 @@
 body {font-size: 1.1em; color: #330066; text-shadow: -1px 0 white, 0 1px #f8f8f8, 1px 0 #6a6666, 0 -1px #ab9d9d; background: rgba(255, 255, 255, 1); background-image: url("background.jpg"); background-image: linear-gradient(to right, rgba(255,255,255, 0.2) 0 100%), url("background.jpg"); background-repeat: repeat; font-family: Calibri, Verdana, Arial; font-weight: 900; max-width: 80%; margin: 0px auto;}
 
 .bt, .bt:hover, .bt:visited {text-decoration:none; cursor:pointer; font-size:1.3em; color:#CC0033; font-family:'Segoe UI Historic'; }
-.cadr {width:60%; font-family:'Segoe UI Historic'; color:blue; font-size:1.3em; padding:0.3em; }
+.cadr {width:80%; font-family:'Segoe UI Historic'; color:blue; font-size:1.3em; padding:0.3em; }
 .center {text-align: center; }
 .pa {margin: 0.6em 2% 0.6em 15%; }
 div {display: inline-block; margin: 5px 5px 17px 5px;}
