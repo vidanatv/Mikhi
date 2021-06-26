@@ -29,7 +29,7 @@ You must enable JavaScript in your web browser: see the <a class="ext" href="htt
 <br>
 <input type="button" class="myButton" data-clipboard-action="copy" data-clipboard-target="#bar" value="copy">
 <script>
-var clipboard = new Clipboard('.bf');
+var clipboard = new Clipboard('.myButton');
 clipboard.on('success', function(e) {
 console.log(e); 
 });
